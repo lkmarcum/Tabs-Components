@@ -28,7 +28,9 @@
   align-items: center;
   margin-top: 10px;
   border: 2.5px solid #931d25;
+  animation: slideOut 0.5s;
 }
+
 .dropdown .dropdown-link {
   width: 100%;
   text-align: center;
@@ -36,10 +38,32 @@
   font-size: 18px;
   text-decoration: none;
   color: #931d25;
+  animation: textFade 0.5s;
 }
 .dropdown .dropdown-link:hover {
   color: #ffffff;
   background-color: #931d25;
+}
+
+@keyframes textFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 267%;
+  }
 }
 .dropdown .dropdown-hidden {
   display: none;
